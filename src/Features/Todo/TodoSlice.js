@@ -12,6 +12,7 @@ export const todoSlice=createSlice({
             state.todo.push(todo)
         },
         removeTodo:(state,action)=>{
+            confirm("do you want to delete the todo")
             state.todo=state.todo.filter((todo)=>todo.id!==action.payload)
         },
         
